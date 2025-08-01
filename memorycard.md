@@ -2,33 +2,44 @@
 
 ---
 schema_version: 2.0.0
+
 project_uid: ""
+
 card_id: ""
+
 generated_by: ""
+
 timestamp: ""
+
 git:
   repo: ""
   branch: ""
   head_sha: ""
   dirty: false
   uncommitted_files: []
+
 env:
   node: ""
   pkg_manager: ""
   platform: ""
+
 context_budget:
   max_tokens: 12000
   priority_sections: ["identity", "current_state", "next_actions", "issues"]
+
 redaction:
   rules: ["REDACT:ENV_VALUES", "MASK:API_KEYS", "HIDE:SECRETS"]
+
 load_hints:
   focus: ""
   next_steps: []
   blockers: []
+
 validation:
   required_checks: ["git_status", "package_json", "entry_points"]
   health_score: 0
 checksum: ""
+
 ---
 
 ## 🎮 **MEMORY CARD COMMANDS**
